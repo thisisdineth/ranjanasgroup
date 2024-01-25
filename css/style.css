@@ -76,7 +76,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 15px 0 0 0;
-    background: #00539C;
+    background: #0a9c00;
 }
 
 .header.home {
@@ -348,7 +348,7 @@ a:focus {
 }
 
 .header .hero .form .btn:hover {
-    color: #00539C;
+    color: #009c39;
     background: #ffffff;
 }
 
@@ -383,7 +383,7 @@ a:focus {
     padding: 0 12px;
     font-size: 22px;
     font-weight: 300;
-    color: #00539C;
+    color: #009c39;
 }
 
 .page-header a:hover {
@@ -437,7 +437,7 @@ a:focus {
     height: 9px;
     left: calc(50% - 10px);
     bottom: -3px;
-    background: #00539C;
+    background: #009c3c;
     border-radius: 5px;
 }
 
@@ -485,7 +485,7 @@ a:focus {
 
 .about .about-text h2 {
     position: relative;
-    color: #00539C;
+    color: #009c2c;
     font-size: 50px;
     margin-bottom: 15px;
 }
@@ -512,7 +512,7 @@ a:focus {
 
 .about .about-text a.btn:hover {
     color: #ffffff;
-    background: #00539C;
+    background: #009c41;
 }
 
 @media (max-width: 767.98px) {
@@ -611,7 +611,7 @@ a:focus {
 
 .feature a.btn:hover {
     color: #ffffff;
-    background: #00539C;
+    background: #009c22;
 }
 
 .feature .feature-item {
@@ -627,7 +627,7 @@ a:focus {
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: 300;
-    color: #00539C;
+    color: #009c2c;
 }
 
 .feature .feature-item p {
@@ -685,7 +685,7 @@ a:focus {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 400;
-    color: #00539C;
+    color: #089c00;
 }
 
 .team .team-text h3 {
@@ -795,7 +795,7 @@ a:focus {
 .faqs .card-header a {
     display: block;
     width: 100%;
-    color: #00539C;
+    color: #009c2c;
     font-size: 18px;
     font-weight: 300;
     line-height: 40px;
@@ -816,7 +816,7 @@ a:focus {
     font-family: 'font Awesome 5 Free';
     content: "\f067";
     float: right;
-    color: #00539C;
+    color: #009c2a;
     font-size: 12px;
     font-weight: 900;
     transition: .3s;
@@ -826,7 +826,7 @@ a:focus {
     font-family: 'font Awesome 5 Free';
     content: "\f068";
     float: right;
-    color: #00539C;
+    color: #009c2f;
     font-size: 12px;
     font-weight: 900;
     transition: .3s;
@@ -882,7 +882,7 @@ a:focus {
 
 .price .featured-item .price-header {
     color: #ffffff;
-    background: #00539C;
+    background: #009c0d;
 }
 
 .price .price-icon {
