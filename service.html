@@ -103,8 +103,119 @@
                 </div>
             </div>
             <!-- Page Header End -->
+            <style>
+                
+                .search-container {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px;
+                }
+        
+                #searchInput {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px 0 0 5px;
+                }
+        
+                button {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 0 5px 5px 0;
+                    background-color: #4CAF50;
+                    color: white;
+                    cursor: pointer;
+                }
+        
+                button:hover {
+                    background-color: #45a049;
+                }
+            </style>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="performSearch()">Search</button>
+            </div>
+        
+            <div id="serviceContent">
+                <!-- Your service page content goes here -->
+
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header">
+            <p>Our Services</p>
+            <h2>Provide Services Islandwide</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                    <img src="img/service-1.jpg" alt="Service">
+                    <h3>GENERAL CLEANING SERVICES</h3>
+                    <p>
+                        The main concern of any business is the cleanliness of the facilities particularly areas which have frequent public visitors. Our general cleaning services will maintain the functionality and cleanliness of any facility.
+                    </p>
+                    <a class="btn" href="RFMservices.pdf">Read more</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                    <img src="img/service-2.jpg" alt="Service">
+                    <h3>CARPET CLEANING  </h3>
+                    <p>
+                        We use professional grade carpet cleaning equipment that will maintain the cleanliness and aesthetic value of your carpeting. We use environmentally friendly stain removel techniques and offer Citrus based cleaning products.
+
+                    </p>
+                    <a class="btn" href="RFMservices.pdf">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                    <img src="img/service-3.jpg" alt="Service">
+                    <h3>FLOOR POLISHING</h3>
+                    <p>
+                        To maintain any type of flooring requires regular cleaning and polishing. Our staff is trained to maintain any type of flooring including vinyl, tile and wood. We use professional grade floor cleaning equipment and best quality cleaning products.
+                        
+                    </p>
+                    <a class="btn" href="RFMservices.pdf">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item">
+                    <img src="img/service-4.jpg" alt="Service">
+                    <h3>ALL services</h3>
+<ul type="box">                    <p>
+<li>General Cleaning</li>
+<li>Window Cleaning</li>
+<li>Carpet Cleaning</li>
+<li>Gutter cleaning</li>
+<li>Floor polishing</li>
+<li>Initial and final construction Cleaning</li>
+<li>High Pressure Cleaning</li>
+<li>Brick Cleaning</li>
+<li>End of Tenancy Cleaning</li>
+<li>Chair Shampooing</li>
+<li>Floor Strip & Seal</li>
+</ul>     </p>
+                    <a class="btn" href="RFMservices.pdf">And more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service 1 st row end -->
 
 
+
+
+
+
+
+
+
+
+
+            </div>
+            <!--all services end under serach-->
 
  <!-- Footer Start -->
  <div class="footer">
@@ -190,6 +301,19 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script>
+            function performSearch() {
+                var searchInputValue = document.getElementById('searchInput').value;
+                
+                // You can implement your search functionality here
+                // For now, let's just log the search input
+                console.log('Searching for:', searchInputValue);
+    
+                // Update or load the service content dynamically based on the search
+                // For example, you can use AJAX to fetch and update the content
+                // document.getElementById('serviceContent').innerHTML = 'Your updated content goes here';
+            }
+        </script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
