@@ -1,298 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Services - Ranjanas Facilities Management</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Ranjanas Facilities Management" name="Variety of facilities service under one roof">
-        <meta content="Ranjanas Facilities Management" name="Variety of facilities service under one roof">
+<head>
+    <meta charset="utf-8">
+    <title>About - Ranjanas Facilities Management</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Ranjanas Facilities Management" name="Variety of facilities service under one roof">
+    <meta content="Ranjanas Facilities Management" name="Variety of facilities service under one roof">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
-        
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <div class="header">
+            <!-- ... existing header content ... -->
+            <div class="navbar navbar-expand-lg bg-light navbar-light">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <div class="wrapper">
-            <!-- Header Start -->
-            <div class="header">
-                <div class="container-fluid">
-                    <div class="header-top row align-items-center">
-                        <div class="col-lg-3">
-                            <div class="brand">
-                                <a href="index.html">
-                                    
-                                     <img src="img/logo.png" alt="Logo"> 
-                                </a>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="portfolio.html" class="nav-item nav-link">Mission and Vision</a>
+                        <a href="single.html" class="nav-item nav-link">Team</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                        </div>
+                        <div class="nav-item">
+                            <button class="btn" onclick="performSearch()">Search</button>
+                        </div>
+                        <!-- ... existing navigation links ... -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">CHEMICALS AND EQUIPMENT</a>
+                                <a href="#" class="dropdown-item">Testimonial evidence</a>
                             </div>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="topbar">
-                                <div class="topbar-col">
-                                    <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+012 345 67890</a>
-                                </div>
-                                <div class="topbar-col">
-                                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>info@example.com</a>
-                                </div>
-                                <div class="topbar-col">
-                                    <div class="topbar-social">
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-youtube"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navbar navbar-expand-lg bg-light navbar-light">
-                                <a href="#" class="navbar-brand">MENU</a>
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-
-                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                    <div class="navbar-nav ml-auto">
-                                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                                        <a href="about.html" class="nav-item nav-link">About</a>
-                                        <a href="service.html" class="nav-item nav-link">Service</a>
-                                        <a href="portfolio.html" class="nav-item nav-link">Mission and Vision</a>
-                                        <a href="single.html" class="nav-item nav-link">Team</a>
-                                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
-                                            <div class="dropdown-menu">
-                                                <a href="#" class="dropdown-item">CHEMICALS AND EQUIPMENT</a>
-                                                <a href="#" class="dropdown-item">Testimonial evidence</a>
-                                            </div>
-                                        </div>
-                                        <a href="mailto:info@ranjanasgroup.com?subject=We%20want%20to%20contact%20you%20from%20RFM%20WEBSITE&body=Hey%2C%20I'm%20%7Byour%20name%7D%0Acontact%20me%20-%20%7BEmail%20or%20phone%7D%0A%0A_____________________%0A%0Awrite%20your%20massage%20here%20%0A%0A%0A%0A%0A" class="btn">Email us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="mailto:info@ranjanasgroup.com?subject=We%20want%20to%20contact%20you%20from%20RFM%20WEBSITE&body=Hey%2C%20I'm%20%7Byour%20name%7D%0Acontact%20me%20-%20%7BEmail%20or%20phone%7D%0A%0A_____________________%0A%0Awrite%20your%20massage%20here%20%0A%0A%0A%0A%0A" class="btn">Email us</a>
                     </div>
                 </div>
             </div>
-            <!-- Header End -->
-            
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Our Services</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Our Services</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Header End -->
-            <style>
-                
-                .search-container {
-                    display: flex;
-                    justify-content: center;
-                    margin: 20px;
-                }
-        
-                #searchInput {
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px 0 0 5px;
-                }
-        
-                button {
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 0 5px 5px 0;
-                    background-color: #4CAF50;
-                    color: white;
-                    cursor: pointer;
-                }
-        
-                button:hover {
-                    background-color: #45a049;
-                }
-            </style>
-
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <button onclick="performSearch()">Search</button>
-            </div>
-        
-            <div id="serviceContent">
-                <!-- Your service page content goes here -->
-
-<!-- Service Start -->
-<div class="service">
-    <div class="container">
-        <div class="section-header">
-            <p>Our Services</p>
-            <h2>Provide Services Islandwide</h2>
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <img src="img/service-1.jpg" alt="Service">
-                    <h3>GENERAL CLEANING SERVICES</h3>
-                    <p>
-                        The main concern of any business is the cleanliness of the facilities particularly areas which have frequent public visitors. Our general cleaning services will maintain the functionality and cleanliness of any facility.
-                    </p>
-                    <a class="btn" href="RFMservices.pdf">Read more</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <img src="img/service-2.jpg" alt="Service">
-                    <h3>CARPET CLEANING  </h3>
-                    <p>
-                        We use professional grade carpet cleaning equipment that will maintain the cleanliness and aesthetic value of your carpeting. We use environmentally friendly stain removel techniques and offer Citrus based cleaning products.
+        <!-- Header End -->
 
-                    </p>
-                    <a class="btn" href="RFMservices.pdf">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <img src="img/service-3.jpg" alt="Service">
-                    <h3>FLOOR POLISHING</h3>
-                    <p>
-                        To maintain any type of flooring requires regular cleaning and polishing. Our staff is trained to maintain any type of flooring including vinyl, tile and wood. We use professional grade floor cleaning equipment and best quality cleaning products.
-                        
-                    </p>
-                    <a class="btn" href="RFMservices.pdf">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <img src="img/service-4.jpg" alt="Service">
-                    <h3>ALL services</h3>
-<ul type="box">                    <p>
-<li>General Cleaning</li>
-<li>Window Cleaning</li>
-<li>Carpet Cleaning</li>
-<li>Gutter cleaning</li>
-<li>Floor polishing</li>
-<li>Initial and final construction Cleaning</li>
-<li>High Pressure Cleaning</li>
-<li>Brick Cleaning</li>
-<li>End of Tenancy Cleaning</li>
-<li>Chair Shampooing</li>
-<li>Floor Strip & Seal</li>
-</ul>     </p>
-                    <a class="btn" href="RFMservices.pdf">And more </a>
-                </div>
-            </div>
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <!-- ... existing page header content ... -->
         </div>
-    </div>
-</div>
-<!-- Service 1 st row end -->
+        <!-- Page Header End -->
 
-
-
-
-
-
-
-
-
-
-
-            </div>
-            <!--all services end under serach-->
-
- <!-- Footer Start -->
- <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="footer-contact">
-                    <h2>Get In Touch</h2>
-                    <p><i class="fa fa-map-marker-alt"></i>Kalutara, Sri Lanka</p>
-                    <p><i class="fa fa-phone-alt"></i>071 867 0992</p>
-                    <p><i class="fa fa-envelope"></i>info@ranjanasgroup.com</p>
-                    <div class="footer-social">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="footer-link">
-                    <h2>Useful Link</h2>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Service</a>
-                    <a href="">Mission</a>
-                    <a href="">Vission</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="footer-link">
-                    <h2>Useful Link</h2>
-                    <a href="">Our Clients</a>
-                    <a href="">Clients Review</a>
-                    <a href="">Ongoing Project</a>
-                    <a href="">Customer Support</a>
-                    <a href="">FAQs</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="footer-form">
-                    <h2>Stay Updated</h2>
-                    <p>
-                        Get in touch with us submit your E-mail below,
-                    </p>
-                    <input class="form-control" placeholder="Email here">
-                    <button class="btn">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container footer-menu">
-        <div class="f-menu">
-            <a href="">Terms of use</a>
-            <a href="">Privacy policy</a>
-            <a href="">Cookies</a>
-            <a href="">Help & FQAs</a>
-            <a href="">Contact us</a>
-        </div>
-    </div>
-    <div class="container copyright">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; <a href="https://ranjanasgroup.com"></a>, All Right Reserved.</p>
-            </div>
-            <div class="col-md-6">
-                <p>Designed By <a href="https://thisisdineth.store">Dineth Gunawardana</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
-
-<a href="https://ranjanasgroup.com" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-</div>
-
+        <!-- ... existing page content ... -->
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -304,12 +80,8 @@
         <script>
             function performSearch() {
                 var searchInputValue = document.getElementById('searchInput').value;
-                
-                // You can implement your search functionality here
-                // For now, let's just log the search input
                 console.log('Searching for:', searchInputValue);
-    
-                // Update or load the service content dynamically based on the search
+                // Implement your search functionality here or update content dynamically
                 // For example, you can use AJAX to fetch and update the content
                 // document.getElementById('serviceContent').innerHTML = 'Your updated content goes here';
             }
@@ -319,4 +91,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-
