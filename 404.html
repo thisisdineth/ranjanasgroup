@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error - Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #65a965; /* Green background */
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff; /* White text color */
+        }
+
+        h1 {
+            font-size: 8em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Page Not Found</p>
+    </div>
+
+    <!-- Canvas for bubbles and water effect -->
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const bubbles = [];
+
+        function createBubble() {
+            const bubble = {
+                x: Math.random() * canvas.width,
+                y: canvas.height + 50,
+                radius: Math.random() * 20 + 10,
+                color: 'rgba(255, 255, 255, 0.8)',
+                velocityY: Math.random() * 2 + 1,
+            };
+
+            bubbles.push(bubble);
+        }
+
+        function animateBubbles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < bubbles.length; i++) {
+                const bubble = bubbles[i];
+
+                ctx.beginPath();
+                ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
+                ctx.fillStyle = bubble.color;
+                ctx.fill();
+
+                bubble.y -= bubble.velocityY;
+
+                if (bubble.y < 0 - bubble.radius) {
+                    bubbles.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        function updateCanvas() {
+            createBubble();
+            animateBubbles();
+            requestAnimationFrame(updateCanvas);
+        }
+
+        updateCanvas();
+
+        // Resize canvas on window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
