@@ -68,7 +68,7 @@
             bubbles.push(bubble);
         }
 
-        function animateBubbles() {
+        function animateBubbles(mouseX, mouseY) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             for (let i = 0; i < bubbles.length; i++) {
@@ -79,7 +79,13 @@
                 ctx.fillStyle = bubble.color;
                 ctx.fill();
 
-                bubble.y -= bubble.velocityY;
+                // Move bubbles towards the mouse pointer
+                const dx = mouseX - bubble.x;
+                const dy = mouseY - bubble.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                const speed = 5;
+                bubble.x += (dx / distance) * speed;
+                bubble.y += (dy / distance) * speed;
 
                 if (bubble.y < 0 - bubble.radius) {
                     bubbles.splice(i, 1);
@@ -90,9 +96,18 @@
 
         function updateCanvas() {
             createBubble();
-            animateBubbles();
+            animateBubbles(mouseX, mouseY);
             requestAnimationFrame(updateCanvas);
         }
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+
+        // Update mouse position
+        window.addEventListener('mousemove', (event) => {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
 
         updateCanvas();
 
