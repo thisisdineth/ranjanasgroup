@@ -627,11 +627,21 @@ Canopies, Filters, cookers, grills, microwaves, ovens refrigerators, sinks, deep
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
 <script>
-        const searchForm = document.getElementById("search-form");
+const searchForm = document.getElementById("search-form");
 searchForm.addEventListener("submit", function(event) {
   event.preventDefault();
   const query = document.getElementById("search-query").value;
-  // Perform search for query here
+  // Send a GET request to the server with the search query
+  fetch(`/search?q=${query}`)
+    .then(response => response.json())
+    .then(data => {
+      // Do something with the search results
+      console.log(data);
+    })
+    .catch(error => {
+      // Handle any errors that occur
+      console.error(error);
+    });
 });
 </script>
         <!-- Template Javascript -->
